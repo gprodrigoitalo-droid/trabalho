@@ -1,27 +1,1685 @@
-# Compiled class file
-*.class
+Algoritmos 11 a 130 em Kotlin
 
-# Log file
-*.log
 
-# BlueJ files
-*.ctxt
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+Algoritmos 11 a 130 em Kotlin
+Algoritmo 11
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+  fun main() {
+      println("Aprendendo Algoritmo!!!")
+  }
 
-# Kotlin Gradle plugin data, see https://kotlinlang.org/docs/whatsnew20.html#new-directory-for-kotlin-data-in-gradle-projects
-.kotlin/
+
+
+Algoritmo 12
+
+  fun main() {
+      print("Aprendendo Algoritmo!!!")
+      print("Com Anita e Guto")
+  }
+
+
+
+Algoritmo 13
+
+  fun main() {
+      print("Aprendendo Algoritmo!!!")
+      print("\nCom Anita e Guto")
+  }
+
+
+
+Algoritmo 14
+
+  fun main() {
+      print("Aprendendo Algoritmo!!!\n")
+      print("Com Anita e Guto")
+  }
+
+
+
+Algoritmo 15
+
+  fun main() {
+      println("Aprendendo Algoritmo\nCom Anita e Guto\n\nE implementando\nFica
+  muito mais fácil!!")
+  }
+
+
+
+Algoritmo 16
+
+  fun main() {
+      var x = 10
+      println(x)
+  }
+
+
+
+Algoritmo 17
+
+  fun main() {
+      var x = 10
+      println("Valor de x = $x")
+  }
+
+
+
+Algoritmo 18
+
+  fun main() {
+      var x = 10
+      println("Valor de x + 1 = ${x + 1}")
+  }
+
+
+
+Algoritmo 19
+
+  import kotlin.math.*
+
+
+  fun main() {
+      println("raiz: ${sqrt(64.0)}")
+      println("potência: ${8.0.pow(3)}")
+      println("absoluto: ${abs(-8)}")
+      println("arredondado 5.51: ${5.51.roundToInt()}")
+      println("inteiro 87 para real: ${87.toDouble()}")
+      println("divisão inteira 3/4: ${3 / 4}")
+  }
+
+
+
+Algoritmo 20
+
+  fun main() {
+      print("Digite palavra 1: ")
+      val c = readLine()!!
+      print("Digite palavra 2: ")
+      val c1 = readLine()!!
+
+
+          println("Tamanho: ${c.length}")
+          println("Concatenando: ${c + c1}")
+          println("Primeiro caractere: ${c.first()}")
+          println("Último caractere: ${c.last()}")
+          println("Todos menos o primeiro: ${c.drop(1)}")
+          println("Três primeiros: ${c.take(3)}")
+          println("Três últimos: ${c.takeLast(3)}")
+  }
+
+
+
+Algoritmo 21
+
+  fun main() {
+      println("12 + 5 / 2 = ${12 + 5 / 2.0}")
+      println("(12 + 5) / 2 = ${(12 + 5) / 2.0}")
+      println("3 * (7 % 5) = ${3 * (7 % 5)}")
+      println("(3 * 7) % 5 = ${(3 * 7) % 5}")
+      println("3 * 7 / 5 (inteira) = ${3 * 7 / 5}")
+  }
+
+
+
+Algoritmo 22
+
+  fun main() {
+      println("20 / 4 / 2 = ${20 / 4 / 2}")
+      println("30 / 4 / 2 = ${30 / 4 / 2}")
+      println("7 / 4 = ${7 / 4}")
+      println("6 / 4 = ${6 / 4}")
+  }
+
+
+
+Algoritmo 23
+
+  fun main() {
+      print("Digite número de três casas: ")
+      val a = readLine()!!.toInt()
+      val d = a % 100 / 10
+      println("Algarismo das dezenas: $d")
+  }
+
+
+Algoritmo 24
+
+  fun main() {
+      print("Digite número de três casas: ")
+      val a = readLine()!!.toInt()
+      val d = (a / 10) % 10
+      println("Algarismo das dezenas: $d")
+  }
+
+
+
+Algoritmo 25
+
+  fun main() {
+      print("Digite data no formato ddmmaa: ")
+      val data = readLine()!!.toInt()
+      val dia = data / 10000
+      val mes = data % 10000 / 100
+      val ano = data % 100
+      println("DIA: $dia")
+      println("MES: $mes")
+      println("ANO: $ano")
+  }
+
+
+
+Algoritmo 26
+
+  fun main() {
+      print("Digite data no formato ddmmaa: ")
+      val data = readLine()!!.toInt()
+      val dia = data / 10000
+      val mes = data % 10000 / 100
+      val ano = data % 100
+      val novaData = mes * 10000 + dia * 100 + ano
+      println("Data no formato mmddaa: $novaData")
+  }
+
+Algoritmo 27
+
+  fun main() {
+      var x = 2
+      var y = 5
+      println("x = $x")
+      x++
+      println("y = $y")
+      y--
+      println("novo valor de x = $x")
+      println("novo valor de y = $y")
+  }
+
+
+
+Algoritmo 28
+
+  fun main() {
+      println("É PRECISO FAZER TODOS OS ALGORITMOS PARA APRENDER")
+  }
+
+
+
+Algoritmo 29
+
+  fun main() {
+      println("Toni")
+  }
+
+
+
+Algoritmo 30
+
+  fun main() {
+      val produto = 28 * 43
+      println("O produto entre os dois é: $produto")
+  }
+
+
+
+Algoritmo 31
+
+  fun main() {
+      val ma = (8 + 9 + 7) / 3.0
+      println("A média aritmética é: $ma")
+  }
+
+
+Algoritmo 32
+
+  fun main() {
+      print("Entre com um número: ")
+      val num = readLine()!!.toInt()
+      println("Número: $num")
+  }
+
+
+
+Algoritmo 33
+
+  fun main() {
+      print("Entre com um número: ")
+      val num1 = readLine()!!.toInt()
+      print("Entre com outro número: ")
+      val num2 = readLine()!!.toInt()
+      println("Número 1: $num1")
+      println("Número 2: $num2")
+  }
+
+
+
+Algoritmo 34
+
+  fun main() {
+      print("Entre com um número: ")
+      val numero = readLine()!!.toInt()
+      val ant = numero - 1
+      val suc = numero + 1
+          println("O sucessor é $suc e o antecessor é $ant")
+  }
+
+
+
+Algoritmo 35
+
+  fun main() {
+          print("Entre com nome: ")
+          val nome = readLine()!!
+          print("Entre com endereço: ")
+          val endereco = readLine()!!
+          print("Entre com telefone: ")
+          val telefone = readLine()!!
+          println()
+          println("Nome: $nome")
+          println("Endereço: $endereco")
+          println("Telefone: $telefone")
+  }
+
+
+Algoritmo 36
+
+  fun main() {
+          print("Entre com um número: ")
+          val num1 = readLine()!!.toInt()
+          print("Entre com outro número: ")
+          val num2 = readLine()!!.toInt()
+          val soma = num1 + num2
+          println("Soma: $soma")
+  }
+
+
+
+Algoritmo 37
+
+  fun main() {
+      print("Entre com um número: ")
+          val num1 = readLine()!!.toInt()
+          print("Entre com outro número: ")
+          val num2 = readLine()!!.toInt()
+          val prod = num1 * num2
+          println("Produto: $prod")
+  }
+
+
+
+Algoritmo 38
+
+  fun main() {
+      print("Entre com um número com ponto: ")
+          val num = readLine()!!.toDouble()
+          println("A terça parte é: ${num / 3}")
+  }
+
+
+
+Algoritmo 39
+
+  fun main() {
+      print("Digite a 1ª nota: ")
+          val nota1 = readLine()!!.toDouble()
+          print("Digite a 2ª nota: ")
+          val nota2 = readLine()!!.toDouble()
+          val media = (nota1 + nota2) / 2
+          println("Média: $media")
+  }
+
+
+
+Algoritmo 40
+
+  fun main() {
+      print("Entre com o dividendo: ")
+          val val1 = readLine()!!.toInt()
+          print("Entre com o divisor: ")
+          val val2 = readLine()!!.toInt()
+          val quoc = val1 / val2
+          val rest = val1 % val2
+          println("Dividendo: $val1")
+          println("Divisor: $val2")
+          println("Quociente: $quoc")
+          println("Resto: $rest")
+  }
+
+
+
+Algoritmo 41
+
+  fun main() {
+          print("Entre com 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Entre com 2º número: ")
+          val b = readLine()!!.toDouble()
+          print("Entre com 3º número: ")
+          val c = readLine()!!.toDouble()
+          print("Entre com 4º número: ")
+          val d = readLine()!!.toDouble()
+          val mp = (a * 1 + b * 2 + c * 3 + d * 4) / 10
+          println("Média ponderada: $mp")
+  }
+
+
+
+Algoritmo 42
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Digite um ângulo em graus: ")
+          val angulo = readLine()!!.toDouble()
+          val rang = angulo * PI / 180
+          println("Seno: ${sin(rang)}")
+          println("Co-seno: ${cos(rang)}")
+          println("Tangente: ${tan(rang)}")
+          println("Co-secante: ${1 / sin(rang)}")
+          println("Secante: ${1 / cos(rang)}")
+          println("Cotangente: ${1 / tan(rang)}")
+  }
+
+
+
+Algoritmo 43
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Entre com o logaritmando: ")
+          val num = readLine()!!.toDouble()
+          val logaritmo = ln(num) / ln(10.0)
+          println("Logaritmo: $logaritmo")
+  }
+
+
+
+Algoritmo 44
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Entre com o logaritmando: ")
+          val num = readLine()!!.toDouble()
+          print("Entre com a base: ")
+          val base = readLine()!!.toDouble()
+          val logaritmo = ln(num) / ln(base)
+          println("O logaritmo de $num na base $base é: $logaritmo")
+  }
+
+Algoritmo 45
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Digite número: ")
+          val num = readLine()!!.toDouble()
+          val quad = num.pow(2)
+          val raizQuad = sqrt(num)
+          println("Número: $num")
+          println("Quadrado: $quad")
+          println("Raiz quadrada: $raizQuad")
+  }
+
+
+
+Algoritmo 46
+
+  fun main() {
+      print("Digite saldo: ")
+          val saldo = readLine()!!.toDouble()
+          val nsaldo = saldo * 1.01
+          println("Novo saldo: $nsaldo")
+  }
+
+
+
+Algoritmo 47
+
+  fun main() {
+      print("Entre com um número de 3 dígitos: ")
+          val num = readLine()!!.toInt()
+          val c = num / 100
+          val d = num % 100 / 10
+          val u = num % 10
+          val num1 = u * 100 + d * 10 + c
+          println("Número: $num")
+          println("Invertido: $num1")
+  }
+
+
+
+Algoritmo 48
+
+  fun main() {
+      print("Entre com o salário mínimo: ")
+          val sm = readLine()!!.toDouble()
+          print("Entre com a quantidade em quilowatt: ")
+          val qtdade = readLine()!!.toDouble()
+          val preco = sm / 700
+          val vp = preco * qtdade
+          val vd = vp * 0.9
+          println("Preço do quilowatt: $preco")
+          println("Valor a ser pago: $vp")
+          println("Valor com desconto: $vd")
+  }
+
+
+
+Algoritmo 49
+
+  fun main() {
+      print("Entre com nome: ")
+          val nome = readLine()!!
+          println("Todo nome: $nome")
+          println("Primeiro caractere: ${nome.first()}")
+          println("Último caractere: ${nome.last()}")
+          println("Primeiro ao terceiro: ${nome.take(3)}")
+          println("Quarto caractere: ${nome[3]}")
+          println("Todos menos o primeiro: ${nome.drop(1)}")
+          println("Os dois últimos: ${nome.takeLast(2)}")
+  }
+
+
+
+
+Algoritmo 50
+
+  import kotlin.math.*
+
+
+  fun main() {
+          print("Digite base: ")
+          val base = readLine()!!.toDouble()
+          print("Digite altura: ")
+          val altura = readLine()!!.toDouble()
+          val perimetro = 2 * (base + altura)
+          val area = base * altura
+          val diagonal = sqrt(base.pow(2) + altura.pow(2))
+          println("Perímetro = $perimetro")
+          println("Área = $area")
+          println("Diagonal = $diagonal")
+  }
+
+
+
+Algoritmo 51
+
+  import kotlin.math.*
+
+  fun main() {
+          print("Digite raio: ")
+          val raio = readLine()!!.toDouble()
+          val perimetro = 2 * PI * raio
+          val area = PI * raio.pow(2)
+          println("Perímetro: $perimetro")
+          println("Área: $area")
+  }
+
+
+
+Algoritmo 52
+
+  import kotlin.math.*
+
+  fun main() {
+          print("Digite o lado do quadrado: ")
+          val lado = readLine()!!.toDouble()
+          val perimetro = 4 * lado
+          val area = lado.pow(2)
+          val diagonal = lado * sqrt(2.0)
+          println("Perímetro: $perimetro")
+          println("Área: $area")
+          println("Diagonal: $diagonal")
+  }
+
+
+
+
+Algoritmo 53
+
+  import kotlin.math.*
+
+  fun main() {
+          print("Entre com a base: ")
+          val a = readLine()!!.toDouble()
+          print("Entre com a altura: ")
+          val b = readLine()!!.toDouble()
+          print("Entre com a profundidade: ")
+          val c = readLine()!!.toDouble()
+          val diagonal = sqrt(a.pow(2) + b.pow(2) + c.pow(2))
+          println("Diagonal: $diagonal")
+  }
+
+
+
+Algoritmo 54
+
+  fun main() {
+          print("Entre com a base: ")
+          val a = readLine()!!.toDouble()
+          print("Entre com a altura do triângulo: ")
+          val b = readLine()!!.toDouble()
+          println("Área = ${(a * b) / 2}")
+  }
+
+
+
+Algoritmo 55
+
+  fun main() {
+          print("Medida da diagonal maior: ")
+          val diagMaior = readLine()!!.toDouble()
+          print("Medida da diagonal menor: ")
+          val diagMenor = readLine()!!.toDouble()
+          val area = (diagMaior * diagMenor) / 2
+          println("Área = $area")
+  }
+
+
+
+
+Algoritmo 56
+
+  fun main() {
+          print("Digite nome: ")
+          val nome = readLine()!!
+          print("Digite idade: ")
+          val idade = readLine()!!.toInt()
+          println()
+          println("Nome = $nome")
+          println("Idade = $idade")
+  }
+
+
+
+Algoritmo 57
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Digite PR1: ")
+          val pr1 = readLine()!!.toDouble()
+          print("Digite PR2: ")
+          val pr2 = readLine()!!.toDouble()
+          val mf = (pr1 + pr2) / 2
+          println("Média truncada = ${mf.toInt()}")
+          println("Média arredondada = ${mf.roundToInt()}")
+  }
+
+
+
+Algoritmo 58
+
+  import kotlin.math.*
+
+
+  fun main() {
+          print("Entrar com 1º valor: ")
+          val xnum1 = readLine()!!.toDouble()
+          print("Entrar com 2º valor: ")
+          val xnum2 = readLine()!!.toDouble()
+          print("Entrar com 3º valor: ")
+          val xnum3 = readLine()!!.toDouble()
+          val x = xnum1 + xnum2 / (xnum3 + xnum1) + 2 * (xnum1 - xnum2) + ln(64.0)
+  / ln(2.0)
+          println("X = $x")
+  }
+
+
+Algoritmo 59
+
+  import kotlin.math.*
+
+  fun main() {
+          print("Entrar com 1º cateto: ")
+          val b = readLine()!!.toDouble()
+          print("Entrar com 2º cateto: ")
+          val c = readLine()!!.toDouble()
+          val a = sqrt(b.pow(2) + c.pow(2))
+          println("A hipotenusa é: $a")
+  }
+
+
+
+Algoritmo 60
+
+  fun main() {
+          print("Entrar com o 1º termo: ")
+          val termo = readLine()!!.toInt()
+          print("Entrar com a razão: ")
+          val razao = readLine()!!.toInt()
+          val dec = termo + 9 * razao
+          println("O 10º termo desta P.A. é: $dec")
+  }
+
+
+
+Algoritmo 61
+
+  fun main() {
+          print("Entre com o 1º termo: ")
+          val termo = readLine()!!.toInt()
+          print("Entre com a razão: ")
+          val razao = readLine()!!.toInt()
+          var quinto = termo
+          for (i in 1..4) {
+                  quinto = quinto * razao
+          }
+          println("O 5º termo desta P.G. é: $quinto")
+  }
+
+
+
+Algoritmo 62
+
+  fun main() {
+          print("Digite valor do produto: ")
+          val preco = readLine()!!.toDouble()
+          val npreco = preco * 0.91
+          println("Preço com desconto: $npreco")
+  }
+
+
+
+Algoritmo 63
+
+  fun main() {
+      print("Horas trabalhadas: ")
+          val na = readLine()!!.toInt()
+          print("Valor da hora-aula: ")
+          val vha = readLine()!!.toDouble()
+          print("Percentual de desconto: ")
+          val pd = readLine()!!.toDouble()
+          val sb = na * vha
+          val td = (pd / 100) * sb
+          val sl = sb - td
+          println("Salário líquido: $sl")
+  }
+
+
+
+Algoritmo 64
+
+  fun main() {
+      print("Digite a temperatura em graus centígrados: ")
+          val c = readLine()!!.toDouble()
+          val f = (9 * c + 160) / 5
+          println("Temperatura em Fahrenheit = $f")
+  }
+
+
+
+Algoritmo 65
+
+  import kotlin.math.*
+
+
+  fun main() {
+          print("Digite a altura da lata: ")
+          val altura = readLine()!!.toDouble()
+          print("Digite o raio da lata: ")
+          val raio = readLine()!!.toDouble()
+          val volume = PI * raio.pow(2) * altura
+          println("O volume da lata é = $volume")
+  }
+
+
+
+Algoritmo 66
+
+  fun main() {
+          print("Digite o tempo gasto: ")
+          val tempo = readLine()!!.toDouble()
+          print("Digite a velocidade média: ")
+          val vel = readLine()!!.toDouble()
+          val dist = tempo * vel
+          val litros = dist / 12
+          println("Velocidade = $vel")
+          println("Tempo = $tempo")
+          println("Distância = $dist")
+          println("Litros = $litros")
+  }
+
+
+
+Algoritmo 67
+
+  fun main() {
+          print("Digite o valor da prestação: ")
+          val valor = readLine()!!.toDouble()
+          print("Digite a taxa: ")
+          val taxa = readLine()!!.toDouble()
+          print("Digite o tempo (número de meses): ")
+          val tempo = readLine()!!.toInt()
+          val prest = valor + (valor * (taxa / 100) * tempo)
+          println("O valor da prestação em atraso é = $prest")
+  }
+
+Algoritmo 68
+
+  fun main() {
+          print("Digite 1º número com ponto: ")
+          var a = readLine()!!.toDouble()
+          print("Digite 2º número com ponto: ")
+          var b = readLine()!!.toDouble()
+          val aux = a
+          a = b
+          b = aux
+          println("a = $a")
+          println("b = $b")
+  }
+
+
+
+Algoritmo 69
+
+  fun main() {
+          print("Digite numerador: ")
+          val num = readLine()!!.toInt()
+          print("Digite denominador: ")
+          val denom = readLine()!!.toInt()
+          println("Decimal: ${num.toDouble() / denom}")
+  }
+
+
+
+Algoritmo 70
+
+  fun main() {
+      print("Entre com o valor da conta: ")
+          val cres = readLine()!!.toDouble()
+          val cgorj = cres * 1.1
+          println("O valor da conta com a gorjeta será: ${"%.2f".format(cgorj)}")
+  }
+
+
+
+Algoritmo 71
+
+  fun main() {
+          print("Entre com hora atual: ")
+          val hora = readLine()!!.toInt()
+          print("Entre com minutos: ")
+          val minuto = readLine()!!.toInt()
+          val tminuto = hora * 60 + minuto
+          println("Até agora se passaram: $tminuto minutos")
+  }
+
+
+Algoritmo 72
+
+  fun main() {
+          print("Entre com depósito: ")
+          val deposito = readLine()!!.toDouble()
+          print("Entre com a taxa de juros: ")
+          val taxa = readLine()!!.toDouble()
+          val valor = deposito * taxa / 100
+          val total = deposito + valor
+          println("Rendimentos: $valor")
+          println("Total: $total")
+  }
+
+
+
+Algoritmo 73
+
+  import kotlin.math.*
+
+  fun main() {
+          print("Entre com um número com parte fracionária: ")
+          val num = readLine()!!.toDouble()
+          val numi = num.toInt()
+          val numfrac = num - numi
+          val numa = num.roundToInt()
+          println("Parte inteira: $numi")
+          println("Parte fracionária: ${"%.3f".format(numfrac)}")
+          println("Número arredondado: $numa")
+  }
+
+
+
+Algoritmo 74
+
+  fun main() {
+          print("Entre com o salário mínimo: ")
+          val salmin = readLine()!!.toDouble()
+          print("Entre com o salário da pessoa: ")
+          val salpe = readLine()!!.toDouble()
+          val num = salpe / salmin
+          println("A pessoa ganha $num salários mínimos")
+  }
+
+
+
+Algoritmo 75
+
+  fun main() {
+      print("Entre com seu peso, só a parte inteira: ")
+          val peso = readLine()!!.toInt()
+          val pesoGramas = peso * 1000
+          val novoPeso = (pesoGramas * 1.12).toInt()
+          println("Peso em gramas: $pesoGramas")
+          println("Novo peso: $novoPeso")
+  }
+
+
+
+Algoritmo 76
+
+  fun main() {
+          print("Digite número: ")
+          val num = readLine()!!.toInt()
+          println("Sucessor: ${(num + 1) % 61}")
+  }
+
+
+
+Algoritmo 77
+
+  import kotlin.math.*
+
+  fun main() {
+          print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          val d = (a - b).pow(2)
+          val q = a.pow(2) - b.pow(2)
+          println("O quadrado da diferença = $d")
+          println("Diferença dos quadrados = $q")
+  }
+
+
+
+Algoritmo 78
+
+  fun main() {
+          print("Digite o número de lados do polígono: ")
+          val n = readLine()!!.toInt()
+          val nd = n * (n - 3) / 2.0
+          println("Número de diagonais: $nd")
+  }
+
+
+Algoritmo 79
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Digite o valor da aplicação: ")
+          val p = readLine()!!.toDouble()
+          print("Digite a taxa (ex: 0.01): ")
+          val i = readLine()!!.toDouble()
+          print("Digite o número de meses: ")
+          val n = readLine()!!.toInt()
+          val va = p * ((1 + i).pow(n) - 1) / i
+          println("O valor acumulado: $va")
+  }
+
+
+
+Algoritmo 80
+
+  fun main() {
+          print("Digite a quantidade de fitas: ")
+          val quant = readLine()!!.toInt()
+          print("Digite o valor do aluguel: ")
+          val valAluguel = readLine()!!.toDouble()
+          val fatAnual = quant / 3.0 * valAluguel * 12
+          println("Faturamento anual: $fatAnual")
+          val multas = valAluguel * 0.1 * (quant / 3.0) / 10
+          println("Multas mensais: $multas")
+          val quantFinal = quant - quant * 0.02 + quant / 10.0
+          println("Quantidade de fitas no final do ano: $quantFinal")
+  }
+
+
+Algoritmo 81
+
+  fun main() {
+      print("Digite conta de três dígitos: ")
+          val conta = readLine()!!.toInt()
+          var d1 = conta / 100
+          var d2 = conta % 100 / 10
+          var d3 = conta % 10
+          val inv = d3 * 100 + d2 * 10 + d1
+          val soma = conta + inv
+          d1 = (soma / 100) * 1
+          d2 = (soma % 100 / 10) * 2
+          d3 = (soma % 10) * 3
+          val digito = (d1 + d2 + d3) % 10
+          println("Dígito verificador: $digito")
+  }
+
+
+
+Algoritmo 82
+
+  fun main() {
+          print("Digite número: ")
+          val numero = readLine()!!.toDouble()
+          if (numero > 20) {
+              val met = numero / 2
+                  println("Metade: $met")
+          }
+  }
+
+
+
+Algoritmo 83
+
+  import kotlin.math.*
+
+
+  fun main() {
+          print("Digite número: ")
+          val numero = readLine()!!.toDouble()
+          if (numero > 0) {
+                  println("Inverso: ${1 / numero}")
+          } else {
+              println("Absoluto: ${abs(numero)}")
+          }
+  }
+
+
+
+Algoritmo 84
+
+  fun main() {
+          print("Digite número: ")
+          val a = readLine()!!.toInt()
+          if (a % 2 == 0) {
+                  println("PAR")
+          } else {
+              println("ÍMPAR")
+          }
+  }
+
+
+
+Algoritmo 85
+
+  fun main() {
+      print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          print("Digite 3º número: ")
+          val c = readLine()!!.toDouble()
+          val max: Double
+          if (a > b) {
+              if (a > c) {
+                      max = a
+                  } else {
+                      max = c
+              }
+          } else {
+                  if (b > c) {
+                      max = b
+                  } else {
+                           max = c
+                  }
+          }
+          println(max)
+  }
+
+
+
+Algoritmo 86
+
+  fun main() {
+      print("Digite número: ")
+      val num = readLine()!!.toDouble()
+          if (num > 0) {
+              println("POSITIVO")
+          } else {
+              if (num < 0) {
+                   println("NEGATIVO")
+                  } else {
+                      println("NULO")
+                  }
+          }
+  }
+
+
+
+Algoritmo 87
+
+  fun main() {
+      print("Qual a capital do Brasil? ")
+      val resp = readLine()!!
+          if (resp == "BRASÍLIA" || resp == "Brasília") {
+              println("PARABÉNS!")
+      } else {
+          if (resp == "brasília" || resp == "Brazília" || resp == "BRAZÍLIA" ||
+  resp == "brazília") {
+                      println("CERTO! Mas atenção para grafia: Brasília ou BRASÍLIA")
+                  } else {
+                      println("ERRADO! ESTUDE MAIS!")
+                  }
+          }
+  }
+
+
+
+Algoritmo 88
+
+  fun main() {
+      println("*************")
+          println("*CALCULADORA*")
+          println("*************")
+          println("+ para somar")
+          println("- para subtrair")
+          println("* para multiplicar")
+          println("/ para dividir")
+          print("Digite opção: ")
+          val resp = readLine()!!
+
+          if (resp == "+" || resp == "-" || resp == "*" || resp == "/") {
+                  print("Digite 1º número: ")
+                  val a = readLine()!!.toDouble()
+                  print("Digite 2º número: ")
+                  val b = readLine()!!.toDouble()
+                  if (resp == "+") {
+                      println("SOMA: ${a + b}")
+                  } else if (resp == "-") {
+                      println("SUBTRAÇÃO: ${a - b}")
+                  } else if (resp == "*") {
+                      println("MULTIPLICAÇÃO: ${a * b}")
+                  } else {
+                           println("DIVISÃO: ${a / b}")
+              }
+          } else {
+                  println("OPÇÃO NÃO DISPONÍVEL!")
+          }
+  }
+
+
+
+Algoritmo 89
+
+  fun main() {
+      println("Planetas que podem ser analisados:")
+          println("1 Mercúrio")
+          println("2 Vênus")
+          println("3 Marte")
+          println("4 Júpiter")
+          println("5 Saturno")
+          println("6 Urano")
+          print("Escolha o planeta a ser analisado: ")
+          val op = readLine()!!.toInt()
+          print("Entre com um peso na Terra: ")
+          val pterra = readLine()!!.toDouble()
+          when (op) {
+                  1 -> println("Seu peso no planeta: ${(pterra / 10) * 0.37}")
+                  2 -> println("Seu peso no planeta: ${(pterra / 10) * 0.88}")
+                  3 -> println("Seu peso no planeta: ${(pterra / 10) * 0.38}")
+                  4 -> println("Seu peso no planeta: ${(pterra / 10) * 2.64}")
+                  5 -> println("Seu peso no planeta: ${(pterra / 10) * 1.15}")
+                  6 -> println("Seu peso no planeta: ${(pterra / 10) * 1.17}")
+                  else -> println("Este planeta não pode ser analisado")
+          }
+  }
+
+
+
+Algoritmo 90
+
+  fun main() {
+          print("Digite número: ")
+          val numero = readLine()!!.toDouble()
+          if (numero > 20) {
+                  println(numero)
+          }
+  }
+
+
+
+Algoritmo 91
+
+  fun main() {
+      print("Digite 1º número: ")
+          val num1 = readLine()!!.toInt()
+          print("Digite 2º número: ")
+          val num2 = readLine()!!.toInt()
+          val soma = num1 + num2
+          if (soma > 10) {
+              println("Soma: $soma")
+          }
+  }
+
+
+
+Algoritmo 92
+
+  fun main() {
+      print("Digite 1º número: ")
+      val num1 = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val num2 = readLine()!!.toDouble()
+          val soma = num1 + num2
+          if (soma > 20) {
+              println("Soma: ${soma + 8}")
+          } else {
+              println("Soma: ${soma - 5}")
+          }
+  }
+
+
+Algoritmo 93
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Digite número: ")
+          val numero = readLine()!!.toDouble()
+          if (numero > 0) {
+              println("Raiz: ${sqrt(numero)}")
+          } else {
+              if (numero < 0) {
+                           println("Quadrado: ${numero.pow(2)}")
+                  }
+          }
+  }
+
+
+
+Algoritmo 94
+
+  fun main() {
+          print("Digite número: ")
+          val numero = readLine()!!.toInt()
+          if (numero % 3 == 0) {
+              println("Múltiplo de 3")
+          } else {
+                  println("Não é múltiplo de 3")
+          }
+  }
+
+
+
+Algoritmo 95
+
+  fun main() {
+      print("Digite número: ")
+      val numero = readLine()!!.toInt()
+          if (numero % 5 == 0) {
+              println("É divisível por 5")
+          } else {
+              println("Não é divisível por 5")
+          }
+  }
+
+
+Algoritmo 96
+
+  fun main() {
+      print("Digite número: ")
+      val numero = readLine()!!.toInt()
+          if (numero % 3 == 0 && numero % 7 == 0) {
+              println("Divisível por 3 e por 7")
+          } else {
+                  println("Não é divisível por 3 e por 7")
+          }
+  }
+
+
+
+Algoritmo 97
+
+  fun main() {
+      print("Digite número: ")
+          val numero = readLine()!!.toInt()
+          if (numero % 10 == 0) {
+              println("Múltiplo de 10")
+          } else {
+              if (numero % 2 == 0) {
+                      println("Múltiplo de 2")
+                  } else {
+                      if (numero % 5 == 0) {
+                               println("Múltiplo de 5")
+                           } else {
+                                println("Não é múltiplo de 2 nem de 5")
+                           }
+                  }
+          }
+  }
+
+
+
+Algoritmo 98
+
+  fun main() {
+      print("Digite o salário: ")
+          val sb = readLine()!!.toDouble()
+          print("Digite o valor da prestação: ")
+          val vp = readLine()!!.toDouble()
+          if (vp <= 0.3 * sb) {
+              println("Empréstimo concedido")
+          } else {
+                  println("Empréstimo negado")
+          }
+  }
+
+
+
+Algoritmo 99
+
+  fun main() {
+      print("Número de 3 algarismos: ")
+          val num = readLine()!!.toInt()
+          val c = num / 100
+          if (c % 2 == 0) {
+              println("O algarismo das centenas é par: $c")
+          } else {
+                  println("O algarismo das centenas é ímpar: $c")
+          }
+  }
+
+
+
+Algoritmo 100
+
+  fun main() {
+      print("Número de 4 algarismos: ")
+          val num = readLine()!!.toInt()
+          val c = num % 10000 / 100
+          if (c % 4 == 0) {
+              println("O número $c é múltiplo de 4")
+          } else {
+              println("O número $c não é múltiplo de 4")
+          }
+  }
+
+
+Algoritmo 101
+
+  fun main() {
+      print("Digite número: ")
+          val num = readLine()!!.toDouble()
+          if (num > 20 && num < 90) {
+              println("O número está na faixa de 20 a 90")
+          } else {
+              println("O número está fora da faixa de 20 a 90")
+          }
+  }
+
+
+
+Algoritmo 102
+
+  fun main() {
+          print("Digite número: ")
+          val numero = readLine()!!.toDouble()
+          if (numero > 20) {
+              println("Maior que 20")
+          } else {
+                  if (numero < 20) {
+                      println("Menor que 20")
+                  } else {
+                           println("Igual a 20")
+                  }
+          }
+  }
+
+
+
+Algoritmo 103
+
+  fun main() {
+          print("Entre com ano atual: ")
+          val anoa = readLine()!!.toInt()
+          print("Entre com ano de nascimento: ")
+          val anon = readLine()!!.toInt()
+          if (anon > anoa) {
+              println("Ano de nascimento inválido")
+          } else {
+              println("Idade: ${anoa - anon}")
+          }
+  }
+
+Algoritmo 104
+
+  fun main() {
+          print("Digite nome: ")
+          val nome = readLine()!!
+          print("Digite sexo: ")
+          val sexo = readLine()!!
+          print("Digite idade: ")
+          val idade = readLine()!!.toInt()
+          if ((sexo == "F" || sexo == "f") && idade < 25) {
+              println("$nome ACEITA")
+          } else {
+              println("$nome NÃO ACEITA")
+          }
+  }
+
+
+
+Algoritmo 105
+
+  fun main() {
+          print("Digite sigla: ")
+          val sigla = readLine()!!
+          if (sigla == "RJ" || sigla == "rj") {
+              println("carioca")
+          } else {
+              if (sigla == "SP" || sigla == "sp") {
+                      println("paulista")
+                  } else {
+                           if (sigla == "MG" || sigla == "mg") {
+                               println("mineiro")
+                           } else {
+                                println("outros estados")
+                           }
+                  }
+          }
+  }
+
+Algoritmo 106
+
+  fun main() {
+          print("Digite nome: ")
+          val nome = readLine()!!
+          val letra = nome.first().toString()
+          if (letra == "A" || letra == "a") {
+              println(nome)
+          }
+  }
+
+
+
+Algoritmo 107
+
+  fun main() {
+      print("Digite nome: ")
+      val nome = readLine()!!
+          if (nome.take(5) == "JOSÉ " || nome == "JOSÉ") {
+              println(nome)
+          }
+  }
+
+
+
+Algoritmo 108
+
+  fun main() {
+          print("Digite nome: ")
+          val nome = readLine()!!
+          val prenome = nome.take(5)
+          if (prenome == "JOSÉ " || prenome == "José " || prenome == "josé " ||
+              nome == "JOSÉ" || nome == "José" || nome == "josé") {
+              println(nome)
+          }
+  }
+
+
+Algoritmo 109
+
+  fun main() {
+      print("Digite 1º nome: ")
+      val nome1 = readLine()!!
+          print("Digite 2º nome: ")
+          val nome2 = readLine()!!
+          if (nome1 < nome2) {
+              println("$nome1 $nome2")
+          } else {
+                  println("$nome2 $nome1")
+          }
+  }
+
+
+
+Algoritmo 110
+
+  fun main() {
+      print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          if (a == b) {
+              println("Iguais")
+          } else {
+              println("Diferentes")
+          }
+  }
+
+
+
+Algoritmo 111
+
+  fun main() {
+      print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          if (a > b) {
+              println("Maior: $a")
+          } else {
+              println("Maior: $b")
+          }
+  }
+
+
+Algoritmo 112
+
+  fun main() {
+      print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          if (a < b) {
+              println("Menor: $a")
+          } else {
+                  println("Menor: $b")
+          }
+  }
+
+
+
+Algoritmo 113
+
+  fun main() {
+      print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          if (a < b) {
+              println("$a $b")
+          } else {
+              println("$b $a")
+          }
+  }
+
+
+
+Algoritmo 114
+
+  fun main() {
+          print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          if (a > b) {
+              println("$a $b")
+          } else {
+              println("$b $a")
+          }
+  }
+
+Algoritmo 115
+
+  import kotlin.math.*
+
+
+  fun main() {
+      print("Digite valor de x: ")
+          val x = readLine()!!.toDouble()
+          print("Digite valor de y: ")
+          val y = readLine()!!.toDouble()
+          if (x > y) {
+              println("${sqrt(x)}")
+              println("${y.pow(2)}")
+          } else {
+              if (y > x) {
+                      println("${sqrt(y)}")
+                      println("${x.pow(2)}")
+                  } else {
+                           println("Números iguais")
+                  }
+          }
+  }
+
+
+
+Algoritmo 116
+
+  fun main() {
+          print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          print("Digite 3º número: ")
+          val c = readLine()!!.toDouble()
+          if (a > b) {
+              if (a > c) {
+                      println("Maior: $a")
+                  } else {
+                      println("Maior: $c")
+              }
+          } else {
+                  if (b > c) {
+                      println("Maior: $b")
+                  } else {
+                           println("Maior: $c")
+                  }
+          }
+  }
+
+Algoritmo 117
+
+  fun main() {
+          print("Digite 1º número: ")
+          val a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          val b = readLine()!!.toDouble()
+          print("Digite 3º número: ")
+          val c = readLine()!!.toDouble()
+          var maior = a
+          if (b > maior) {
+                  maior = b
+          }
+          if (c > maior) {
+                  maior = c
+          }
+          println("Maior: $maior")
+  }
+
+
+
+Algoritmo 118
+
+  fun main() {
+          print("Digite 1º número: ")
+          var a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          var b = readLine()!!.toDouble()
+          print("Digite 3º número: ")
+          var c = readLine()!!.toDouble()
+          var aux: Double
+          if (a > b) {
+                  aux = a
+                  a = b
+                  b = aux
+          }
+          if (a > c) {
+                  aux = a
+                  a = c
+                  c = aux
+          }
+          if (b > c) {
+                  aux = b
+                  b = c
+                  c = aux
+          }
+          println("Ordem crescente: $a $b $c")
+  }
+
+
+
+Algoritmo 119
+
+  fun main() {
+          print("Digite 1º número: ")
+          var a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          var b = readLine()!!.toDouble()
+          print("Digite 3º número: ")
+          var c = readLine()!!.toDouble()
+          var aux: Double
+          if (a > b) {
+                  aux = a
+                  a = b
+                  b = aux
+          }
+          if (a > c) {
+                  aux = a
+                  a = c
+                  c = aux
+          }
+          if (b > c) {
+              aux = b
+                  b = c
+                  c = aux
+          }
+          println("Ordem decrescente: $c $b $a")
+  }
+
+
+
+Algoritmo 120
+
+  fun main() {
+      print("Digite 1º número: ")
+          var a = readLine()!!.toDouble()
+          print("Digite 2º número: ")
+          var b = readLine()!!.toDouble()
+          print("Digite 3º número: ")
+          var c = readLine()!!.toDouble()
+          var aux: Double
+          if (a > b) {
+              aux = a
+
+                  a = b
+                  b = aux
+          }
+          if (a > c) {
+              aux = a
+                  a = c
+                  c = aux
+          }
+          if (b > c) {
+              aux = b
+                  b = c
+                  c = aux
+          }
+          val maior = c
+          val intermediario = b
+          val menor = a
+          println("Maior: $maior")
+          println("Intermediário: $intermediario")
+          println("Menor: $menor")
+  }
+fun main() {
+    val kotlin = "🙂"
+    println(kotlin)
+}
